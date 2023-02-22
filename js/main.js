@@ -18,6 +18,7 @@ $(window).on('scroll', function () {
 $(function () {
     $('.main_slide').slick({
         dots: true,
+        autoplay: true,
     })
 
 });
