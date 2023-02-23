@@ -16,9 +16,19 @@ $(window).on('scroll', function () {
 
 
 $(function () {
+    // 메인슬라이드 부분
     $('.main_slide').slick({
         dots: true,
         autoplay: true,
-    })
+    });
 
+    // 상품 슬라이드 부분
+    $('.pro_slide').slick({
+
+    });
+
+
+    $('.right_Banner button').on('click', function () {
+        $('.right_Banner').toggleClass('on')
+    })
 });
