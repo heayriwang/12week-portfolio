@@ -14,21 +14,31 @@
     top: 0;
     left: 0;
     right: 0;
+
     background: #fff;
     transition: line-height 0.5s;
     z-index: 9999999;
 }
 
 #header_scroll.on {
-    background: rgba(0, 0, 0, 0.5);
+    background: #fff;
     line-height: 60px;
+    color: #fff;
+
 }
+
+
 
 #header_scroll .inner {
     display: flex;
     justify-content: space-between;
+
 }
 
+#header_scroll .inner i {
+    font-size: 20px;
+    color: #333;
+}
 
 #header_scroll .gnb a {
     display: block;
@@ -36,11 +46,15 @@
 
 #header_scroll .gnb>ul {
     display: flex;
-    gap: 60px;
+    gap: 80px;
 }
 
 #header_scroll .gnb>ul>li {
     position: relative;
+}
+
+#header_scroll .gnb>ul>li a {
+    font-size: 20px;
 }
 
 #header_scroll .gnb>ul>li .smenu {
@@ -52,12 +66,17 @@
     color: #333;
     width: 150px;
 
+
     text-align: center;
     transform: translate(-50%, 0);
     z-index: 999;
     height: 0;
     transition: 0.5s;
     overflow: hidden;
+}
+
+#header_scroll .gnb>ul>li .smenu a {
+    font-size: 15px;
 }
 
 #header_scroll .gnb>ul:hover>li .smenu {
@@ -81,6 +100,7 @@
 
 #header_scroll .gnb>ul:hover::before {
     height: 170px;
+
 
 }
 
@@ -146,7 +166,7 @@
 }
 
 #mainvisual .itm01 {
-    background: url(../img/mainslide.jpg)no-repeat center center/cover;
+    background: url(../img/mainslide.jpg)no-repeat top center/cover;
 }
 
 #mainvisual .main_slide .itm02 {
@@ -367,8 +387,8 @@
     outline: none;
     width: 10px;
     height: 10px;
-    border-top: 1px solid rgb(136, 31, 13, 0.5);
-    border-left: 1px solid rgb(136, 31, 13, 0.5);
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
 
 }
 
@@ -426,10 +446,89 @@
 }
 
 
+#main_grid {
+    padding: 100px 0;
+
+}
 
 
 
 
+
+
+
+
+
+/* main_grid */
+#main_grid .inner figure {
+    width: 1200px;
+    height: 1000px;
+    padding: 100px 0;
+    line-height: 40px;
+}
+
+
+#main_grid .inner figure .up h2 {
+    position: relative;
+    margin: -400px 0 0 800px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+
+    text-shadow: 1px 1px 3px #000;
+    line-height: 45px;
+
+}
+
+#main_grid .inner figure .up p {
+    position: relative;
+    margin: 0 0 0 800px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #555;
+    line-height: 50px;
+
+}
+
+#main_grid .inner figure .up span {
+    position: relative;
+    margin: -100px 0 0 800px;
+    color: #fff;
+    background: tan;
+    padding: 8px;
+
+
+}
+
+
+
+#main_grid .inner figure .down h2 {
+    position: relative;
+    margin: -700px 0 0 200px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+
+    text-shadow: 1px 1px 3px #000;
+    line-height: 45px;
+}
+
+#main_grid .inner figure .down p {
+    position: relative;
+    margin: 0 0 0 200px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #555;
+    line-height: 50px;
+}
+
+#main_grid .inner figure .down span {
+    position: relative;
+    margin: -800px 0 0 200px;
+    color: #fff;
+    background: tan;
+    padding: 8px;
+}
 
 
 
