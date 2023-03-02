@@ -85,20 +85,20 @@
 
 }
 
-#header_scroll .gnb>ul::before {
+#header_scroll .gnb::after {
     content: "";
     position: absolute;
-    top: 100px;
+    top: auto;
     left: 0;
     right: 0;
-    height: 170px;
+
     background: #fff;
-    z-index: 999;
+    z-index: 998;
     transition: 0.5s;
     height: 0;
 }
 
-#header_scroll .gnb>ul:hover::before {
+#header_scroll .gnb:hover::after {
     height: 170px;
 
 
@@ -261,6 +261,9 @@
     flex: 1;
 }
 
+#mainCustomer figure {
+    text-align: center;
+}
 
 
 #mainCustomer h2 {
@@ -472,10 +475,10 @@
     position: relative;
     margin: -400px 0 0 800px;
     font-size: 30px;
-    font-weight: 700;
-    color: #fff;
+    font-weight: 800;
+    color: #333;
 
-    text-shadow: 1px 1px 3px #000;
+
     line-height: 45px;
 
 }
@@ -507,9 +510,9 @@
     margin: -700px 0 0 200px;
     font-size: 30px;
     font-weight: 700;
-    color: #fff;
+    color: #333;
 
-    text-shadow: 1px 1px 3px #000;
+
     line-height: 45px;
 }
 
